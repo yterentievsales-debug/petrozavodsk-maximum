@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Максимум · Автомойка</title>
+<meta name="description" content="Ручная мойка, химчистка салона и детейлинг в светлых боксах. Выберите услугу и время: сообщение уйдёт в мессенджер.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ручная мойка и детейлинг в Петрозаводске: запись онлайн">
+<meta property="og:description" content="Ручная мойка, химчистка салона и детейлинг в светлых боксах. Выберите услугу и время: сообщение уйдёт в мессенджер.">
+<meta property="og:image" content="assets/hero.webp">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%23f5a524%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --c-canvas: #17130d; --c-surface: #251e14; --c-ink: #f8f1e4; --c-ink-soft: #b9ac96; --c-accent: #f5a524; --c-accent-ink: #1f1300; --c-accent-deep: #f5a524; --f-display: "Rubik", "Arial", system-ui, sans-serif; --f-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --h1k: 0.64; }
+</style>
+<link rel="stylesheet" href="style-prod.css">
+<style>
+/* ---- виджет-сотрудник: отвечаем сразу, круглосуточно ------------------- */
+.agent { position: fixed; right: clamp(12px, 2vw, 28px); bottom: clamp(12px, 2.4vh, 28px); z-index: 60;
+  display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--c-ink); }
+.agent__bubble { display: grid; gap: 2px; padding: 10px 16px; border-radius: 16px 16px 4px 16px;
+  background: var(--c-surface); box-shadow: 0 10px 30px rgb(0 0 0 / .45), 0 0 0 1px rgb(255 255 255 / .08);
+  font-family: var(--f-text); line-height: 1.25; max-width: 15rem;
+  opacity: 0; transform: translateY(8px); animation: agent-in .5s 1.4s cubic-bezier(.2,.7,.2,1) forwards; }
+.agent__bubble b { font-size: .95rem; font-weight: 700; }
+.agent__bubble span { font-size: .8rem; color: var(--c-ink-soft); }
+.agent__photo { position: relative; flex: none; width: 64px; height: 64px; border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--c-accent), 0 10px 26px rgb(0 0 0 / .45); transition: transform .2s ease-out; }
+.agent__photo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+.agent__photo::before { content: ""; position: absolute; inset: -3px; border-radius: 50%; border: 2px solid var(--c-accent);
+  animation: agent-pulse 2.6s ease-out infinite; pointer-events: none; }
+.agent__photo i { position: absolute; right: 1px; bottom: 1px; width: 15px; height: 15px; border-radius: 50%;
+  background: #2fbf5b; box-shadow: 0 0 0 3px var(--c-surface); }
+.agent:hover .agent__photo, .agent:focus-visible .agent__photo { transform: scale(1.05); }
+.agent:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 4px; border-radius: 40px; }
+@keyframes agent-in { to { opacity: 1; transform: none; } }
+@keyframes agent-pulse { 0% { opacity: .8; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.35); } }
+.agent__photo b { display: none; position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); padding: 1px 6px; border-radius: 8px;
+  background: var(--c-accent); color: var(--c-accent-ink); font: 700 10px/1.4 var(--f-text); white-space: nowrap; }
+@media (max-width: 640px) {
+  .agent { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .agent__bubble { display: none; }
+  .agent__photo { width: 54px; height: 54px; }
+  .agent__photo i { right: -2px; bottom: auto; top: 0; width: 13px; height: 13px; }
+  .agent__photo b { display: block; }
+}
+.agent { transition: opacity .25s ease-out, transform .25s ease-out; }
+.agent.is-away { opacity: 0; transform: translateY(10px); pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .agent__bubble { animation: none; opacity: 1; transform: none; } .agent__photo::before { animation: none; opacity: 0; } }
+</style>
+</head>
+<body class="s-prod" id="top" data-wa="" data-tg="maximum_crwsh" data-max="">
+<header class="s-bar" data-s-bar>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Максимум</a>
+  <div class="s-bar__right">
+    <a class="s-bar__tel" href="tel:+78142265050">+7 (8142) 26-50-50</a>
+    <a class="s-btn s-btn--sm" href="#widget">Записаться</a>
+  </div>
+</header>
+<main>
+  <section class="s-hero">
+    <div class="s-hero__text">
+      <p class="s-eyebrow">Автомойка и детейлинг · Петрозаводск</p>
+      <h1>Ручная мойка и детейлинг в Петрозаводске: запись онлайн</h1>
+      <p class="s-lead">Ручная мойка, химчистка салона и детейлинг в светлых боксах. Выберите услугу и время: сообщение уйдёт в мессенджер.</p>
+      <ul class="s-ticks"><li>Ручная мойка в светлых боксах</li><li>Детейлинг: полировка, защитные покрытия, удаление вмятин без покраски</li><li>Комната ожидания с кожаными диванами и зарядкой для телефона</li></ul>
+      <p class="s-rating"><b>4,4</b> на Яндекс.Картах · 172 отзыва</p>
+      <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Жёлтое купе в светлом боксе автомойки «Максимум»" loading="lazy" decoding="async" style="object-position:50% 55%"></figure>
+    </div>
+    <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-booking data-days="7" data-closed="" data-slots="10:00,11:00,12:00,13:00,14:00,15:00,16:00,17:00,18:00,19:00,20:00" data-message="Здравствуйте! Хочу записаться на мойку: {услуга}, {день} в {время}." onsubmit="return false">
+      <h2 class="s-widget__title">Запись</h2>
+      <fieldset><legend>Услуга</legend>
+        <div class="s-chips s-chips--col"><label class="s-chip s-chip--row"><input type="radio" name="svc" value="0" data-name="Мойка кузова" data-price="900" data-from="1" data-min="" checked><span>Мойка кузова</span><b>от 900 ₽</b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="1" data-name="Мойка двигателя" data-price="" data-from="" data-min=""><span>Мойка двигателя</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="2" data-name="Химчистка салона" data-price="" data-from="" data-min=""><span>Химчистка салона</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="3" data-name="Полировка кузова" data-price="" data-from="" data-min=""><span>Полировка кузова</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="4" data-name="Нанесение защитного воска" data-price="" data-from="" data-min=""><span>Нанесение защитного воска</span><b></b></label><label class="s-chip s-chip--row"><input type="radio" name="svc" value="5" data-name="Удаление вмятин без покраски" data-price="" data-from="" data-min=""><span>Удаление вмятин без покраски</span><b></b></label></div>
+      </fieldset>
+      <fieldset><legend>День</legend><div class="s-chips" data-s-days></div></fieldset>
+      <fieldset><legend>Время</legend><div class="s-chips" data-s-times></div></fieldset>
+      <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Ваше сообщение</span><p data-s-bubble></p></div>
+      <div class="s-send">
+        <a class="s-btn s-btn--wide" data-s-msg="telegram" href="#">Записаться в Telegram</a>
+      </div>
+      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      
+    </form></div>
+    <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Жёлтое купе в светлом боксе автомойки «Максимум»" decoding="async" style="object-position:50% 55%" fetchpriority="high"></figure>
+  </section>
+
+  
+
+  <section class="s-section s-reveal" id="prices">
+    <header class="s-section__head"><h2>Услуги и цены</h2><p>На карточке в Картах у «Максимума» нет прайса, указана только вилка на мойку кузова. Цену на конкретную услугу назовём при записи.</p></header>
+    <div class="s-board"><div class="s-board__group">
+      <h3 class="s-board__title">Мойка</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Мойка кузова<em>ручная мойка; по карточке от 900 ₽, итог зависит от автомобиля</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 900 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Мойка двигателя<em>цену назовём при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Чернение резины<em>цену назовём при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Детейлинг и салон</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Химчистка салона<em>цену назовём при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Полировка кузова<em>цену назовём при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Нанесение защитного воска<em>цену назовём при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+        <li class="s-board__row"><span class="s-board__name">Удаление вмятин без покраски<em>цену назовём при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Для авто</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Омывайка 5 л</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">380 ₽</span></li>
+      </ul>
+    </div></div>
+    <p class="s-note">Цены уточняются при записи: на карточке в Картах прайса нет.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Как проходит</h2></header>
+    <ol class="s-steps">
+      <li class="s-steps__item"><span class="s-steps__n">01</span><h3>Записались на время</h3><p>В форме выше или по телефону.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">02</span><h3>Заехали в бокс</h3><p>Светлые боксы с плиткой, ручная мойка.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">03</span><h3>Подождали в комнате ожидания</h3><p>Кожаные диваны и зарядка для телефона: из отзыва на Картах.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">04</span><h3>Забрали машину</h3><p>Арки, пороги и мелочи, которые обычно пропускают: как пишут в отзывах.</p></li>
+    </ol>
+  </section>
+
+  <section class="s-photos s-reveal" aria-label="Фото"><figure><img class="" src="assets/facade.webp" alt="Здание автомойки «Максимум» с четырьмя боксами" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Четыре бокса на улице Правды</figcaption></figure><figure><img class="" src="assets/detailing.webp" alt="Чёрный седан в боксе, на капоте автохимия и салфетка" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Детейлинг и автохимия</figcaption></figure><figure><img class="" src="assets/engine.webp" alt="Мойка двигателя: подкапотное пространство чёрного BMW" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Мойка двигателя</figcaption></figure></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Что здесь есть</h2></header>
+    <ul class="s-promises">
+      <li><h3>Ручная мойка</h3><p>По карточке на Картах: ручная мойка, защитный воск, чернение резины.</p></li>
+      <li><h3>Детейлинг на месте</h3><p>Полировка, химчистка салона, удаление вмятин без покраски.</p></li>
+      <li><h3>Комната ожидания</h3><p>Из отзыва на Картах: «диванчики кожанные», зарядка для телефона.</p></li>
+      <li><h3>Запись на время</h3><p>Ежедневно 09:00–21:00: в форме выше, по телефону или в Телеграм.</p></li>
+    </ul>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head s-section__head--reviews"><h2>Отзывы с Яндекс.Карт</h2><p class="s-reviews__rating"><span class="s-reviews__num">4,4</span><span class="s-reviews__stars" style="--r: 4.4" aria-label="рейтинг 4,4 из 5"></span><span class="s-reviews__count">172 отзыва</span><a class="s-reviews__all" href="https://yandex.ru/maps/org/maximum/1802942827/reviews/" target="_blank" rel="noopener">Читать все отзывы на Яндекс.Картах</a></p></header>
+    <ul class="s-reviews">
+      <li><blockquote>«Лучшая автомойка в городе. Машину всегда отдаю с полной уверенностью что сделают все как надо) Пробовала делать «люкс» в других автомойках - полное разочарование. Поэтому за качеством сюда, рекомендую»</blockquote><p class="s-reviews__who">Елена Беляева · 16 июня</p></li>
+      <li><blockquote>«На мой взгляд самая классная мойка в городе! Отзывчивый персонал, сама мойка отличается от конкурентов подходом к этому процессу!»</blockquote><p class="s-reviews__who">Инкогнито 9552 · 21 января</p></li>
+      <li><blockquote>«Впервые воспользовалась услугами этой мойки и результат меня шокировал! ВСЁ, АБСОЛЮТНО ВСЁ отмыли!»</blockquote><p class="s-reviews__who">Анжелина · 21 августа 2025</p></li>
+    </ul>
+    <p class="s-note">Отзывы с карточки на Яндекс.Картах, без правок.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Частые вопросы</h2></header>
+    <div class="s-faq"><details><summary>Нужна ли запись?</summary><p>Лучше записаться: выберите время в форме выше или позвоните +7 (8142) 26-50-50.</p></details><details><summary>Сколько стоит мойка?</summary><p>По карточке в Картах мойка кузова от 900 ₽. Точную сумму назовём при записи по марке автомобиля и объёму работ.</p></details><details><summary>Какие услуги, кроме мойки?</summary><p>Детейлинг, полировка, химчистка салона, нанесение защитного воска, чернение резины, удаление вмятин без покраски.</p></details><details><summary>Чем можно оплатить?</summary><p>Наличными и картой.</p></details></div>
+  </section>
+
+  <section class="s-section s-final s-reveal" id="contacts">
+    <header class="s-section__head"><h2>Запишитесь на удобное время</h2></header>
+    <div class="s-contacts">
+      <dl>
+        <div><dt>Адрес</dt><dd>ул. Правды, 21, Петрозаводск</dd></div>
+        <div><dt>Часы</dt><dd>Каждый день 09:00–21:00</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+78142265050">+7 (8142) 26-50-50</a></dd></div>
+      </dl>
+      <div class="s-contacts__actions">
+        <a class="s-btn" href="#widget">Записаться</a>
+        
+        <a class="s-btn s-btn--ghost" data-s-msg="telegram" href="#">Telegram</a>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- agent-widget -->
+<a class="agent" href="#widget" aria-label="Написать нам: отвечаем сразу, круглосуточно">
+  <span class="agent__bubble"><b>Отвечаем сразу</b><span>круглосуточно, администратор на связи</span></span>
+  <span class="agent__photo"><img src="assets/agent.webp" alt="" width="64" height="64" loading="lazy"><i aria-hidden="true"></i><b aria-hidden="true">24/7</b></span>
+</a>
+<!-- /agent-widget -->
+<footer class="s-foot"><p>Максимум · Петрозаводск</p><p>Автомойка, детейлинг, химчистка салона</p></footer>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться</a><a class="s-btn s-btn--ghost" href="tel:+78142265050">Позвонить</a></nav>
+<script src="style.js" defer></script>
+<script>
+  // кружок менеджера прячется, пока на экране форма записи (не наезжает на неё)
+  (function () {
+    var a = document.querySelector('.agent'), w = document.getElementById('widget');
+    if (!a || !w || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (es) { a.classList.toggle('is-away', es[0].isIntersecting); }, { rootMargin: '0px 0px -90px 0px' }).observe(w);
+  })();
+</script>
+</body>
+</html>
